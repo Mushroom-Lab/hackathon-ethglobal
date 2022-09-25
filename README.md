@@ -44,7 +44,7 @@ This repo is a minimal HTTP server using Flask, that offer discord redirection. 
 
 #### **3. Discord Http Service**
 
-- [discord-hot-trigger](https://github.com/Mushroom-Lab/discord-bot-trigger)
+- [discord-bot-trigger](https://github.com/Mushroom-Lab/discord-bot-trigger)
 
 This repo is a minimal HTTP server using Flask, that offers a few bundled discord API services by using restFUL endpoints. This server exists to complement the subscription-based discord bot and provide a gateway to push data on behalf the discord bot. Some features are direct-message to users, role-assignment etc.
 
