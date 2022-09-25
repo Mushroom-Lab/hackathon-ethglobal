@@ -5,7 +5,7 @@ The goal of our team has always been to help the community grow and prosper. We 
 
 When we first decided to build [Cremini](https://ethglobal.com/showcase/cremini-x9wth), we were inspired by Gitcoin Passport. The user experience is fantastic. Why dont we build a community reputation system, starting from discord guilds, just on this cool versioned version of IPFS :)?
 
-The team started off very well. By following the tutorial we soon finished code of the key-did stream read/write, and learned Ceramic's technical principles. I have to admit that the learning curve started to get steeper for us （two backend engineers!) from here.
+The team started off very well. By following the tutorial we soon finished code of the key-did stream read/write, and learned Ceramic's technical principles. I have to admit that the learning curve started to get steeper for us（two backend engineers!) from here.
 
 We wanted to improve user experience: 1 After user authorizes for the first time, we can automatically update the onchain profile as a trusted third party. 2 Users can use, for example, the address of the Ethereum wallet as did.
 
