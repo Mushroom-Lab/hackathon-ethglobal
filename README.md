@@ -27,7 +27,7 @@ We approach our goal with the mindset of using micro-services, and modular softw
 
 ##### Discord Bot
 
-- [Mushroom-Lab/Discord-XP-bot: own bot](https://github.com/Mushroom-Lab/Discord-XP-bot) (still private)
+- [Mushroom-Lab/Discord-XP-bot: own bot](https://github.com/Mushroom-Lab/Discord-XP-bot)
 
 This repo is a modified version of https://github.com/KumosLab/Discord-Levels-Bot from KumosLab. On top of the simple XP system using mongoDB, we incorporated the concept of “popularity” that counts the emoji reactions from other users(capped at 1 from each other user on each message). We also added a new bot command that user can use to initialize the Ceramic DID authorization process.
 
