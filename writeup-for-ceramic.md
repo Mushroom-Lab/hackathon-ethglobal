@@ -7,7 +7,7 @@ When we first decided to build Cremini, we were inspired by Gitcoin Passport. Wh
 
 The team started off very well. By following the tutorial we soon finished code of the key-did stream read/write, and learned Ceramic's technical principles. I have to admit that the learning curve started to get steeper for us backend programmers from here.
 
-We wanted to improve user experience: 1 After user authorizes for the first time, we can automatically update the onchain profile as a trusted third party if they choose. 2 Users can use, for example, the address of the Ethereum wallet as did.
+We wanted to improve user experience: 1 After user authorizes for the first time, we can automatically update the onchain profile as a trusted third party. 2 Users can use, for example, the address of the Ethereum wallet as did.
 
 We found that 3id can be used for key rotation, and it can be fully controlled by the user's blockchain wallet. Awesome, these two functions were exactly what we want!
 
