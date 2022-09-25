@@ -2,9 +2,13 @@
 
 This is a one-stop repo for [ETHOnline 2022 hackathon](https://online.ethglobal.com/).
 
+CERMINI empowers user to express Discord activeness on-chain through Ceramic, leveraging the technology of DID session to create data availability while preserving user's ownership.
+
+To get to know more about our project [here](https://ethglobal.com/showcase/cermini-x9wth)
+
 ## SYSTEM DESCRIPTION
 
-### **Features**
+### Features
 
 - **seek** a time-sensitive, revokable authorization from a user for generating a ceramic DID
 - **create** a public user profile on ceramic which bind user’s public address, user_id and guild_id
@@ -17,41 +21,41 @@ This is a one-stop repo for [ETHOnline 2022 hackathon](https://online.ethglobal.
 
 ![Untitled](architecture.jpeg)
 
-### **Tech Stacks**
+### Tech Stacks
 
 We approach our goal with the mindset of using micro-services, and modular software engineering with explicit separation of duties. Thus **5 repos/pieces of individual software** are created to work together to achieve the intended system design. Each piece of software is a little process that does simple, straight-forward tasks.
 
-**Discord Bot**
+##### Discord Bot
 
 - [Mushroom-Lab/Discord-XP-bot: own bot](https://github.com/Mushroom-Lab/Discord-XP-bot) (still private)
 
 This repo is a modified version of https://github.com/KumosLab/Discord-Levels-Bot from KumosLab. On top of the simple XP system using mongoDB, we incorporated the concept of “popularity” that counts the emoji reactions from other users(capped at 1 from each other user on each message). We also added a new bot command that user can use to initialize the Ceramic DID authorization process.
 
-**Discord Redirect** 
+##### **Discord Redirect** 
 
 - [Mushroom-Lab/DiscordRedirect](https://github.com/Mushroom-Lab/DiscordRedirect)
 
 This repo is a minimal HTTP server using Flask, that offer discord redirection. This exist to improve the UX experience as user would receive custom DM when they initialize the DID authorization process. We also incorporated the Discord official Oauth workflow, to strengthen user’s awareness of authorization. 
 
-**Discord Http Service**
+##### **Discord Http Service**
 
 - https://github.com/Mushroom-Lab/discord-bot-trigger
 
 This repo is a minimal HTTP server using Flask, that offers a few bundled discord API services by using restFUL endpoints. This server exists to complement the subscription-based discord bot and provide a gateway to push data on behalf the discord bot. Some features are direct-message to users, role-assignment etc.
 
-**Core** **Backend**
+##### **Core** **Backend**
 
 - https://github.com/Mushroom-Lab/mushroom-backend
 
 This repo is an implementation of backend on [nest.js](https://nestjs.com/). This is the process that interacts with Ceramic storage layer. For example, Discord bot would make call to this backend for updating profile on-chain, and syncing user profile to discord. The Ceramic DID session key is strictly and ONLY consumed in this service. This backend also has its own postgreDB that handles its’ ceramic specific data requirement, separated from any business logic in the discord layer.
 
-**Frontend**
+##### **Frontend**
 
 - https://github.com/Mushroom-Lab/mushroom-demo-frontend
 
 This repo is an implementation of frontend on [next.js](https://nextjs.org/). 
 
-**Regarding Ceramic:**
+### **Regarding Ceramic:**
 
 We rely on Ceramic’s [DIDs Toolkit](https://did.js.org/) to preserve user’s ownership of the data. 
 
