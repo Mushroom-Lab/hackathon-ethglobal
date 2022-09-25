@@ -17,4 +17,4 @@ On a video call with Matthew (cool guy, awesome!), he showed us the projects Cer
 
 A while after the call, our team completed the code snippet of did session. I have to say that this library is really convenient, but it is hidden in a deep position on Ceramic's official website, and the did-js-org website is not easy to find in the search engine.
 
-We have studied the example of ComposeDB. But due to time constraints, we will integrate it on ETHBogota, to index and query reputation data and explore the possibility of integrating with other data models (for example, gitcoin passport is an ideal integration object). At that time we will launch the Reputation SDK. We'll be spending more time getting familiar with it recently.
+We have also studied the examples of ComposeDB. But due to time constraints, we will integrate it on ETHBogota, to index and query reputation data and explore the possibility of integrating with other data models (for example, gitcoin passport is an ideal integration object). At that time we will launch the Reputation SDK. We'll be spending more time getting familiar with it recently!
