@@ -1,10 +1,10 @@
-# CERMINI
+# CREMINI
 
 This is a one-stop repo for [ETHOnline 2022 hackathon](https://online.ethglobal.com/).
 
-CERMINI empowers user to express Discord activeness on-chain through Ceramic, leveraging the technology of DID session to create data availability while preserving user's ownership.
+CREMINI empowers user to express Discord activeness on-chain through Ceramic, leveraging the technology of DID session to create data availability while preserving user's ownership.
 
-More about [CERMINI](https://ethglobal.com/showcase/cermini-x9wth) project.
+More about [CREMINI](https://ethglobal.com/showcase/cremini-x9wth) project.
 
 ## SYSTEM DESCRIPTION
 
