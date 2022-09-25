@@ -13,7 +13,7 @@ We found that 3id can be used for key rotation, and it can be fully controlled b
 
 But after careful researching, we did not find simple examples of implementing key rotation. The 3ID-connect package which can support existing blockchain wallets was also unfriendly to our backend programmers. We spent a lot of time here.
 
-On a video call with Matthew (cool guy, awesome!), he showed us the projects Ceramic team was working on: did-session and composedb. The former does not need to rely on the frontend, has pkh-did support, has user-controlled authorization, and has easy-to-use serialization and deserialization functions. The latter has the indexing support and data aggregation we want to use in our plan.
+On a video call with Matthew (cool guy, awesome!), he showed us the projects Ceramic team was working on: DID-Session and ComposeDB. The former does not need to rely on the frontend, has pkh-did support, has user-controlled authorization, and has easy-to-use serialization and deserialization functions. The latter has the indexing support and data aggregation we want to use in our plan.
 
 A while after the call, our team completed the code snippet of did session. I have to say that this library is really convenient, but it is hidden in a deep position on Ceramic's official website, and the did-js-org website is not easy to find in the search engine.
 

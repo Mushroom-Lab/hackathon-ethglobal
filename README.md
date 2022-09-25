@@ -1,6 +1,6 @@
 # CREMINI
 
-This is a one-stop repo for [ETHOnline 2022 hackathon](https://online.ethglobal.com/). A [write-up]() for using Ceramic is here.
+This is a one-stop repo for [ETHOnline 2022 hackathon](https://online.ethglobal.com/). A [write-up](https://github.com/Mushroom-Lab/hackathon-ethglobal/blob/main/writeup-for-ceramic.md) for using Ceramic is here.
 
 CREMINI empowers user to express Discord activeness on-chain through Ceramic, leveraging the technology of DID session to create data availability while preserving user's ownership.
 
