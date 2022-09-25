@@ -30,35 +30,35 @@ We approach our goal with the mindset of using micro-services, and modular softw
 
 ####  **1. Discord Bot**
 
-- [Mushroom-Lab/Discord-XP-bot: own bot](https://github.com/Mushroom-Lab/Discord-XP-bot)
+- [Discord-XP-bot: own bot](https://github.com/Mushroom-Lab/Discord-XP-bot)
 
 This repo is a modified version of https://github.com/KumosLab/Discord-Levels-Bot from KumosLab. On top of the simple XP system using mongoDB, we incorporated the concept of “popularity” that counts the emoji reactions from other users(capped at 1 from each other user on each message). We also added a new bot command that user can use to initialize the Ceramic DID authorization process.
 
 
 #### **2. Discord Redirect** 
 
-- [Mushroom-Lab/DiscordRedirect](https://github.com/Mushroom-Lab/DiscordRedirect)
+- [DiscordRedirect](https://github.com/Mushroom-Lab/DiscordRedirect)
 
 This repo is a minimal HTTP server using Flask, that offer discord redirection. This exist to improve the UX experience as user would receive custom DM when they initialize the DID authorization process. We also incorporated the Discord official Oauth workflow, to strengthen user’s awareness of authorization. 
 
 
 #### **3. Discord Http Service**
 
-- https://github.com/Mushroom-Lab/discord-bot-trigger
+- [discord-hot-trigger](https://github.com/Mushroom-Lab/discord-bot-trigger)
 
 This repo is a minimal HTTP server using Flask, that offers a few bundled discord API services by using restFUL endpoints. This server exists to complement the subscription-based discord bot and provide a gateway to push data on behalf the discord bot. Some features are direct-message to users, role-assignment etc.
 
 
 #### **4. Core** **Backend**
 
-- https://github.com/Mushroom-Lab/mushroom-backend
+- [Mushroom-backend](https://github.com/Mushroom-Lab/mushroom-backend)
 
 This repo is an implementation of backend on [nest.js](https://nestjs.com/). This is the process that interacts with Ceramic storage layer. For example, Discord bot would make call to this backend for updating profile on-chain, and syncing user profile to discord. The Ceramic DID session key is strictly and ONLY consumed in this service. This backend also has its own postgreDB that handles its’ ceramic specific data requirement, separated from any business logic in the discord layer.
 
 
 #### **5. Frontend**
 
-- https://github.com/Mushroom-Lab/mushroom-demo-frontend
+- [mushroom-demo-frontend](https://github.com/Mushroom-Lab/mushroom-demo-frontend)
 
 This repo is an implementation of frontend on [next.js](https://nextjs.org/). 
 
